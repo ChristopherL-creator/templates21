@@ -63,7 +63,7 @@ function displayToDoWithTemplate() {
             // const dateContainer = document.getElementsByClassName('creation-container')[0]; 
             const dateContainer = div.querySelector('.creation-container');
             const dateSpan = document.createElement('div'); 
-            const dateNode = document.createTextNode(todo.deadLine.toISOString()); 
+            const dateNode = document.createTextNode('a: ' + todo.deadLine.toISOString()); 
             dateSpan.appendChild(dateNode); 
             dateContainer.appendChild(dateSpan);
         } 
