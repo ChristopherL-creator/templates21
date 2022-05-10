@@ -103,3 +103,7 @@ html, body{
     width: 100%; 
 }
 
+/*  pseudoclasse, si attiva in base a certe condizioni, in questo caso se il mouse scorre sopra elemento; */
+/* .my-button: hover{ 
+    background-color: green;
+} */

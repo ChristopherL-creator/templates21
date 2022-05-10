@@ -198,4 +198,38 @@ function compareByDate(todo1, todo2) {
 } 
 
 const dateButton = document.getElementById('date-order-btn'); 
-dateButton.onclick = orderByDate;
+dateButton.onclick = orderByDate; 
+
+function orderByPriority() {
+    toDoList.sort(compareByPriority); 
+    displayToDoWithTemplate(toDoTemplate, 'todo-list-container', toDoList); 
+    doneList.sort(compareByPriority); 
+    displayToDoWithTemplate(doneTemplate, 'done-container', doneList);
+} 
+
+function compareByPriority(todo1, todo2) {
+    return todo1.priority.order - todo2.priority.order; 
+//  per invertire ordine, inverto gli operatori della sottrazione;
+} 
+
+function logToConsole(event) {
+    console.log(event);
+} 
+
+function changeButtonColor(button) {
+    button.style.backgroundColor = 'red'; 
+} 
+
+function removeButtonColor(event) {
+    event.target.style.backgroundColor = ''; 
+//  posso citare solo l'evento, senza richiamare parametro intero;
+}
+
+const priorityButton = document.getElementById('priority-order-btn'); 
+priorityButton.addEventListener('click', orderByPriority); 
+priorityButton.addEventListener('click', logToConsole); 
+//  con addEvetListener posso associare più funzioni a stesso evento; 
+
+priorityButton.addEventListener('mouseenter', () => changeButtonColor(priorityButton)); 
+priorityButton.addEventListener('mouseleave', removeButtonColor); 
+//  per cambiare colore quando mouse scorre sopra a bottone;
