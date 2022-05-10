@@ -3,7 +3,7 @@ html, body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: grey;
+    background-color: rgb(196, 196, 196);
 } 
 
 .div-container{ 
@@ -26,7 +26,11 @@ html, body{
     border-top-color: rgba(255, 255, 255, 0.886); 
     border-right-color: rgba(0, 0, 0, 0.26);  
     border-bottom-color: rgba(0, 0, 0, 0.578); 
-    border-radius: 10px;
+    border-radius: 10px; 
+    -webkit-box-shadow:20px 24px 18px 0px rgba(27, 29, 29, 0.742);
+    -moz-box-shadow: 20px 24px 18px 0px rgba(27, 28, 28, 0.74);
+    box-shadow: 6px 13px 18px 0px rgba(43, 40, 40, 0.662);
+
 } 
 
 .task-griglia{ 
@@ -68,7 +72,10 @@ html, body{
     border-left-color: rgba(255, 255, 255, 0.493); 
     border-top-color: rgba(255, 255, 255, 0.886); 
     border-right-color: rgba(0, 0, 0, 0.26);  
-    border-bottom-color: rgba(0, 0, 0, 0.578);
+    border-bottom-color: rgba(0, 0, 0, 0.578); 
+    -webkit-box-shadow:7px 8px 11px 0px rgba(62,66,66,0.58);
+    -moz-box-shadow: 7px 8px 11px 0px rgba(62,66,66,0.58);
+    box-shadow: 7px 8px 11px 0px rgba(62,66,66,0.58);
     text-align: center; 
     border-radius: 10px
 } 
