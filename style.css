@@ -15,7 +15,7 @@ html, body{
 }
 
 .task-div{ 
-    margin-bottom: 2px;
+    margin-bottom: 30px;
     height: fit-content; 
     width: fit-content; 
     background-color: rgb(177, 0, 0); 
@@ -23,7 +23,10 @@ html, body{
     border-width: 2px; 
     min-width: 370px; 
     border-left-color: rgba(255, 255, 255, 0.493); 
-    border-top-color: rgba(255, 255, 255, 0.886);
+    border-top-color: rgba(255, 255, 255, 0.886); 
+    border-right-color: rgba(0, 0, 0, 0.26);  
+    border-bottom-color: rgba(0, 0, 0, 0.578); 
+    border-radius: 10px;
 } 
 
 .task-griglia{ 
@@ -64,8 +67,10 @@ html, body{
     border-width: 2px;
     border-left-color: rgba(255, 255, 255, 0.493); 
     border-top-color: rgba(255, 255, 255, 0.886); 
-    text-align: center;
-
+    border-right-color: rgba(0, 0, 0, 0.26);  
+    border-bottom-color: rgba(0, 0, 0, 0.578);
+    text-align: center; 
+    border-radius: 10px
 } 
 
 .creation-container{ 
@@ -83,7 +88,7 @@ html, body{
     /* background-color: rgb(59, 0, 0);  */
     height: 40px; 
     min-height: 25px;
-    width: 100%;
+    width: 100%; 
 } 
 
 .button{ 
