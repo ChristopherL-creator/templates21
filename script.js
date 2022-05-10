@@ -165,8 +165,8 @@ function displayToDoWithTemplate(template, containerName, toDoArray) {
 //         }
 //     }
 // } 
-
 displayToDoWithTemplate(toDoTemplate, 'todo-list-container', toDoList);
+
 
 function removeDoneToDo(todo){
     toDoList = toDoList.filter(t => t.name !== todo.name); 
